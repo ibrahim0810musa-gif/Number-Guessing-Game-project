@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+     <header>
+  <h1>Number Guessing Game 🎯</h1>
+ <p>Guess the number between 1 and 100</p>
+  </header>
+  
+     
+     <main>
+          
+          <section class="game-card">
+               
+            <form id="guess-form" >
+           <label for="guess-input" >Enter your guess in the box below: </label> 
+           <input
+           type="number"
+           id="guess-input"
+           min="1"
+           max="100"
+     placeholder="Enter your guess"
+           required
+           >
+           
+    <button type="submit">Guess</button>
+               </form>
+               
+         <p id="message">Start guessing! 🎯</p>
+   <p id="attempts">attempts: 0</p>
+         <p id="best-score">Best Score: --</p>
+         
+         <button type="button" id="new-game-button" class="newGame">New Game</button>
+                       
+          </section>
+     </main>
+     
+     
+     <script src="game.js"></script>
+     </body>
+     </html>

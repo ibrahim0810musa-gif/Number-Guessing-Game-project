@@ -1,0 +1,167 @@
+/* Part A: Reset and page background */
+* {
+     mwrgin:0;
+     padding:0;
+     box-sizing:border-box;
+     
+}
+
+body {
+     
+     color:#1E293B;;
+     background:#F5F3FF;;
+     font-family:Ariel,sans-serif;
+     min-height:100vh;
+}
+
+/* Part B: Heading and description */
+header {
+     padding:30px 15px;
+     background :#6D28D9;
+     color:white;
+     text-align:center;
+     max-width:720px;
+     margin:auto;
+}
+
+header h1 {
+     
+     font-size:20px;
+     margin-bottom:10px;
+}
+
+header p {
+     font-size :16px;
+}
+
+/* Part C: The game card and form */
+main {
+     
+     width:90%;
+     max-width:500px;
+     margin:30px auto;
+}
+
+.game-card {
+     background :white;
+     padding:25px;
+     border-radius:16px;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#guess-form {
+     
+     display:flex;
+     flex-direction:column;
+     gap:12px;
+     text-align:center;
+}
+
+/* Part D: Input field and button */
+#guess-input {
+     padding:14px;
+     border: 2px solid #DDD6FE;
+     border-radius:10px;
+     font-size:16px;
+     width:100%;
+     text-align:center;
+}
+
+button {
+     background :#6D28D9;
+     color:white;
+     padding:14px;
+     border:none;
+     border-radius:10px;
+     font-size:16px;
+     font-weight:bold;
+     transition: background 0.2s;
+     cursor:pointer;
+     margin:auto;
+}
+
+button hover {
+     background: #5B21B6;
+}
+
+.newGame{
+     margin:auto;
+     background:green;
+     
+}
+
+/* Part E: Message and scores */
+#message {
+     margin-top:20px;
+     padding:15px;
+     background: #EDE9FE;
+     border-radius:10px;
+     text-align:center;
+     font-weight:bold;
+}
+
+#attempts,
+#best-score {
+     
+     margin-top:15px;
+     text-align:center;
+     font-size:16px;    
+}
+
+/* Part F: Make it phone-friendly */
+
+@media(max-width:480px) {
+     
+     header h1{
+          
+          font-size :23px;
+     }
+     
+     .game-card{
+          padding:18px;
+     }
+}
+
+/* Make the game fit smaller screens */
+* {
+  box-sizing: border-box;
+}
+
+.game-card {
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Adjust the layout on small screens */
+@media (max-width: 480px) {
+  .game-card {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
